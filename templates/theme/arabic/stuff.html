@@ -1,0 +1,26 @@
+{% extends 'theme/base.html' %}
+{% load thumbnail %}
+{% block content %}
+<section class="teacherInfo commonBody">
+  <div class="container">
+    <div class="commonHeding">
+      <h1>Arabic Stuff Information</h1>
+    </div>
+    <div class="techerBody">
+      {% for stuff in stuffs %}
+      <div class="tchrItemBox">
+        <div class="tchrImg">
+          {% thumbnail stuff.img "150x150" crop="center" as im %}
+            <img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}">
+          {% endthumbnail %}
+        </div>
+        <div class="tchrText">
+          <h2>{{ stuff.name }}</h2>
+          <h3>{{ stuff.designation }}</h3>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

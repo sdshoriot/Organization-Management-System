@@ -1,0 +1,16 @@
+{% extends 'theme/base.html' %}
+{% block content %}
+<section class="commonBody rules">
+  <div class="container">
+    <div class="commonHeding">
+      <h1>{{ notice.heading }}</h1>
+    </div>
+    <div class="fsltBody">
+      <div class="fsltText">
+        <h3>Published: <span>{{ notice.date }}</span></h3><br>
+        <p>{{ notice.description|safe }}</p>
+      </div>  
+    </div>
+  </div>
+</section>
+{% endblock %}

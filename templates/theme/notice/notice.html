@@ -1,0 +1,25 @@
+{% extends 'theme/base.html' %}
+{% block content %}
+<!--============ Contact Us Section========-->
+<section class="noticePage commonBody">
+  <div class="container">
+    <div class="commonHeding">
+      <h1>MTM Notice Bord</h1>
+    </div>
+    <div class="fllNtcBox">
+      <ul>
+        {% for notice in notices %}
+        <li>
+          <a href="{% url 'notice-details' notice.pk %}">
+            <span>Published: <strong>{{ notice.date| date:'d-m-Y' }}</strong></span>
+            <p>{{ notice.description | safe | truncatechars:160 }}</p>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+      <button type="button"><i class="fa fa-angle-double-left" aria-hidden="true"></i>Prev</button>
+      <button type="button">Next<i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+    </div>
+  </div>
+</section>
+{% endblock %}

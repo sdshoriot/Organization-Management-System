@@ -1,0 +1,28 @@
+{% extends 'theme/base.html' %}
+{% load thumbnail %}
+{% block content %}
+<section class="teacherInfo commonBody">
+  <div class="container">
+    <div class="commonHeding">
+      <h1>Al-Forkan Shaykh</h1>
+    </div>
+    <div class="techerBody">
+      {% for shaykh in shaykhs %}
+      <div class="tchrItemBox">
+        <div class="tchrImg">
+          {% thumbnail shaykh.img "150x150" crop="center" as im %}
+            <img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}">
+          {% endthumbnail %}
+        </div>
+        <div class="tchrText">
+          <h2>{{ shaykh.name }}</h2>
+          <h3>{{ shaykh.designation }}</h3>
+          <p>{{ shaykh.biography | safe | truncatechars:150 }}</p>
+          <a href="{% url 'shaykh-detail' shaykh.pk %}">Read More...</a>
+        </div>
+      </div>
+      {% endfor %} 
+    </div>
+  </div>
+</section>
+{% endblock %}
