@@ -16,7 +16,7 @@
         <div class="tchrText">
           <h2>{{ teacher.name }}</h2>
           <h3>{{ teacher.designation }}</h3>
-          <p>{{ teacher.biography }}</p> 
+          <p>{{ teacher.biography | safe }}</p> 
         </div>
       </div> 
     </div>
