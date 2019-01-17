@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.shortcuts import get_object_or_404
 
 from home.models import *
 from notice.models import Notice
@@ -17,6 +18,12 @@ def home(request):
 		   'feedbacks': feedbacks,
 		   }
 	return render(request, 'theme/home/home.html', ctx)
+
+
+def message_detail(request, pk):
+	message = get_object_or_404(Message, pk=pk)
+	ctx = {'message': message}
+	return render(request, 'theme/home/message_detail.html', ctx)
 
 
 def gallery(request):
