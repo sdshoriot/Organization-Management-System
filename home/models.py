@@ -1,6 +1,5 @@
 from django.db import models
-
-from mtm.models import Authority, Member
+from sorl.thumbnail import ImageField
 
 
 class Home(models.Model):
@@ -16,14 +15,19 @@ class Home(models.Model):
 	mtm_history = models.TextField()
 
 
+class Facility(models.Model):
+	img = models.ImageField(upload_to='images', null=True, blank=True)
+	name = models.CharField(max_length=200, null=True, blank=True)
+	description = models.TextField()
+	
+
 class Message(models.Model):
-	authority = models.ForeignKey(Authority, on_delete=models.CASCADE)
+	img = models.ImageField(upload_to='images', null=True, blank=True)
 	name = models.CharField(max_length=200, null=True, blank=True)
 	designation = models.CharField(max_length=200, null=True, blank=True)
 	description = models.TextField()
 
 
 class Feedback(models.Model):
-	member = models.ForeignKey(Member, on_delete=models.CASCADE)
 	name = models.CharField(max_length=200, null=True, blank=True)
 	description = models.TextField()

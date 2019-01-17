@@ -6,7 +6,7 @@ from .models import Notice
 
 # notice_page_view
 def notice(request):
-	notices = Notice.objects.all().order_by('-date')[:4]
+	notices = Notice.objects.all().order_by('-date')[:10]
 	ctx = {'notices': notices}
 	return render(request, 'theme/notice/notice.html', ctx)
 

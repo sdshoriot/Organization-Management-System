@@ -14,5 +14,6 @@ class FeedbackAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Home),
+admin.site.register(Facility),
 admin.site.register(Message, MessageAdmin),
 admin.site.register(Feedback, FeedbackAdmin),

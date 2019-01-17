@@ -1,4 +1,5 @@
 {% extends 'theme/base.html' %}
+{% load thumbnail %}
 {% block content %}
 <main>
   <!--============ Banner Section========-->
@@ -16,12 +17,31 @@
                     </div>
                 </div>
           </div>
+
+          <!--=====================================================================
             <div class="bannerBody">
                 <h1 class="wow fadeInUp">MTM</h1>
                 <h3 class="wow fadeInUp">MTM : মুয়াসসাসাতুত তানমিয়াতুল মালিয়্যাহ</h3>
                 <p class="wow fadeInUp">ঢাকা মেডিকেল,ফজলে রাব্বি হলের ঠিক পুর্বে।,বেগম বদরুন্নেসা কলেজের একটু পিছনে,আর আমার হলের বা রুমের জানালার অর্ধ ভগ্ন গিরিলে দু হস্ত আকরিয়ে খানিক সামনে তাকালেই চোখে পরে এই বৃহৎ ভবনটি।।।দ্বীর্ঘ তিন বছর অনুসন্ধান পর আজ জানতে পারলাম এটির মালিক ৪২ জন! তাদেরো ছোট্ট একটি সংগঠন ছিলো,এখন অনেক বড়!!!!!।।।আমরাওতো এম,টি,এম - এ প্রায় ৪২জন!!স্বপ্নতো দেখতেই পারি কী বলো?????</p>
                 <a href="/member" class="wow fadeInUp">MTM Members<i class="fa fa-angle-right" aria-hidden="true"></i></a>
             </div>
+      ============================================================================-->
+
+            <div class="bannerBody">
+                <h1 class="wow fadeInUp">{{ home.mtm_name }}</h1>
+                <h3 class="wow fadeInUp">{{ home.mtm_meaning }}</h3>
+                <p class="wow fadeInUp">{{ home.mtm_history }}</p>
+                <a href="/member" class="wow fadeInUp">MTM Members<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+
+            <!--============================================================
+             <div class="bannerBody">
+                <h1 class="wow fadeInUp">MTM</h1>
+                <h3 class="wow fadeInUp">MTM : মুয়াসসাসাতুত তানমিয়াতুল মালিয়্যাহ</h3>
+                <p class="wow fadeInUp">ঢাকা মেডিকেল,ফজলে রাব্বি হলের ঠিক পুর্বে।,বেগম বদরুন্নেসা কলেজের একটু পিছনে,আর আমার হলের বা রুমের জানালার অর্ধ ভগ্ন গিরিলে দু হস্ত আকরিয়ে খানিক সামনে তাকালেই চোখে পরে এই বৃহৎ ভবনটি।।।দ্বীর্ঘ তিন বছর অনুসন্ধান পর আজ জানতে পারলাম এটির মালিক ৪২ জন! তাদেরো ছোট্ট একটি সংগঠন ছিলো,এখন অনেক বড়!!!!!।।।আমরাওতো এম,টি,এম - এ প্রায় ৪২জন!!স্বপ্নতো দেখতেই পারি কী বলো?????</p>
+                <a href="/member" class="wow fadeInUp">MTM Members<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+            ================================================================-->
       </div>
   </section>
   
@@ -49,20 +69,16 @@
                    <img src="/static/theme/images/mosque.jpg" alt="">
                </div>
                <div class="wow fadeInUp abBoxrght">
-                   <p>
-                     মধ্যযুগের বাংলা সাহিত্যের বিস্তৃত অঙ্গন জুড়ে অনুবাদ সাহিত্যের চর্চা হয়েছিল এবং পরিণামেএ সাহিত্যের শ্রীবৃদ্ধিসাধনে অনুবাদের গুরুত্বপূর্ণ ভূমিকা অপরিসীম।সকল সাহিত্যের পরিপুষ্টিসাধনে অনুবাদমূলক সাহিত্যকর্মের বিশিষ্ট ভূমিকা আছে।বাংলা সাহিত্যের ক্ষেত্রেও এর ব্যতীক্রম পরিলক্ষিত হয় না।"সমৃদ্ধতর নানা ভাষা থেকে বিচিত্র নতুন ভাব ও তথ্য সঞ্চয় করে নিজ নিজ ভাষার বহন ও সহন ক্ষমতা বাড়িয়ে তোলাই অনুবাদ সাহিত্যের প্রাথমিক প্রবণতা।"ভাষার মান বাড়ানোর জন্য ভাষার ক্ষমতা বৃদ্ধি করতে হয়,আর তাতে সহায়তা করে অনুবাদকর্ম।উন্নত সাহিত্য থেকে ঋণ গ্রহন করা কখনো অযৌক্তিক বিবেচিত হয়নি।উন্নত ও সমৃদ্ধ ভাষা-সাহিত্যের সান্নিধ্যে এলে বিভিন্ন বিষয়ের প্রতিশব্দ তৈরি করা সম্ভব হয়,অন্য ভাষা থেকে প্রয়োজনীয় শব্দও গ্রহন করা যায়।অনুবাদের মাধ্যমে বিশ্বসাহিত্যের শ্রেষ্ঠ বক্তব্য আয়ত্তে আসে।ভাষা ও সাহিত্যের যথার্থ সমৃদ্ধির লক্ষ্যে শ্রেষ্ঠ ও সম্পদশালী ভাষায় উৎকর্ষপূর্ণ সাহিত্যসৃষ্টির অনুবাদ একটি আবশ্যিক উপাদান।  <br> <br>
-                     
-                      জ্ঞানবিজ্ঞানের বিষয়ের বেলায় শুদ্ধ অনুবাদ অভিপ্রেত।কিন্তু সাহিত্যের অনুবাদ শিল্পসম্মত হওয়া আবশ্যিক বলেই তা আক্ষরিক হলে চলে না।ভিন্ন ভাষার শব্দ সম্পদের পরিমাণ, প্রকাশক্ষমতা ও বাগভঙ্গি অনুযায়ী ভিন্ন ভাষায় ব্যক্ত কথায় সংকোচন, প্রসারণ, বর্জন ও সংযোজন আবশ্যিক হয়।মধ্যযুগের বাংলা সাহিত্যে যে অনুবাদের ধারাটি সমৃদ্ধি লাভ করে তাতে সৃজনশীল লেখকের প্রতিভা কাজ করেছিল।সে কারণে মধ্যযুগের এই অনুবাদকর্ম সাহিত্য হিসেবে মর্যাদা লাভ করেছে।বুলিকে লেখ্য ভাষার তথা সাহিত্যের ভাষায় উন্নীত করার সহজ উপায় হচ্ছে অনুবাদ।অন্যভাষা থেকে সাহিত্য, দর্শন, বিজ্ঞান প্রভৃতি জ্ঞান-মননের বিভিন্ন বিসয় অনুবাদ করতে হলে সে বিষয়ক ভাব-চিন্তা-বস্তুর প্রতিশব্দ তৈরী করা অনেক সময় সহজ হয়,তৈরী সম্ভব না হলে মূল ভাষা থেকে শব্দ গ্রহন করতে হয়।এভাবেই সভ্য জাতির ভাষা-সাহিত্য মাত্রই গ্রহনে-সৃজনে ঋদ্ধ হয়েছে।এ ঋণে লজ্জা নেই।যে জ্ঞান বা অনুভব আমাদের দেশে পাঁচশ বছরেও লভ্য হত না,তা আমরা অনুবাদের মাধ্যমে এখনই পেতে পারি।যেমনঃ বিশ্বসাহিত্যের শ্রেষ্ঠ গ্রন্থগুলো,শ্রেষ্ঠ দার্শনিক চিন্তাগুলো,বৈজ্ঞানিক তথ্যগুলো,সমাজতত্ত্বগুলো-মানবচিন্তার শ্রেষ্ঠ সম্পদগুলো এভাবে আয়ত্তে আসে।<br> <br>
-
-                       চৌদ্দ পনেরো শতকে আমাদের লেখ্য সাহিত্যও তেমনি সংস্কৃত-অবহটঠ থেকে ভাব-ভাষা-ছন্দ গ্রহন করেছে,পুরাণাদি থেকে নিয়েছে বর্ণিত বিষয় ও বর্ণনাভঙ্গি এবং রামায়ণ-মহাভারত-ভাগবত-প্রণয়োপাখ্যান-ধর্মশাস্ত্র প্রভৃতি সংস্কৃত-ফারসী-আরবী-হিন্দি থেকে অনূদিত হয়েছে আমাদের ভাষায়।এভাবেই আমাদের লিখিত বা শিষ্ট বাংলা ভাষাসাহিত্যের বুনিয়াদ নির্মিত হয়েছিল। আদর্শ অনুবাদকের একটা বিশেষ যোগ্যতা অপরিহার্য। ভাষান্তর করতে হলে উভয় ভাষার গতিপ্রকৃতি, বাকভঙ্গি ও বাকবিধির বিষয়ে অনুবাদকের বিশেষ ব্যুৎপত্তির দরকার।তাহলেই ভাষান্তর নিখুঁত ও শিল্পগুণান্বিত হয়।তাই ভাষাবিদ কবি ছাড়া অন্য কেউ কাব্যের সুষ্ঠু অনুবাদে সমর্থ হয় না।মধ্যযুগে অ-কবিও অনুবাদ কর্মে উৎসাহী ছিলেন।তাই অনুবাদে নানা ত্রুটি দেখা যায়।এছাড়া এঁরা নিজেদের সামর্থ্য রুচিবুদ্ধি ও প্রয়োজন অনুসারে মূল পাঠের গ্রহন-বর্জন ও সংক্ষেপ করেছেন।এজন্য মধ্যযুগের বাংলা ভাষায় কোন তথাকথিত অনুবাদই নির্ভরযোগ্য নয়।সবগুলোই কিছু কায়িক,কিছু ছায়িক,কিছু ভাবিক অনুবাদ এবং কিছু স্বাধীন রচনা।কাব্য সাহিত্যের অনুবাদ আক্ষরিক হতেই পারে<br> <br>
-                   </p>
+                  <p>{{ home.arabic_history }}</p>  
                </div>
            </div>
        </div>
    </section>
    
    <!--============ Notice Section========-->
-   <section id="notice" class="notice">
+
+   <!--===============================================================
+       <section id="notice" class="notice">
        <div class="container">
           <div class="tchrBg1 noticeBg">
               <span></span>
@@ -114,8 +130,175 @@
            </div>
        </div>
    </section>
-   
+    ==========================================================-->
+
+<section id="notice" class="notice">
+   <div class="container">
+      <div class="tchrBg1 noticeBg">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+       <div class="noticeBody">
+           <div class="commonHeding">
+             <h1>MTM Notice Board</h1>
+         </div>
+           <div class="wow fadeInUp noticeBox">
+              {% for notice in notices %}
+               <div class="wow fadeInUp noticeInner noticeInner1">
+                   <div class="ntcInnrBody">
+                       <a href="{% url 'notice-details' notice.pk %}">
+                          <p>{{ notice.description|truncatechars:250 }}</p>
+                       </a>
+                   </div>
+               </div>
+              {% endfor %}
+               <div class="moreNotice">
+                   <a href="/notice/notice-list">See More...</a>
+               </div>
+           </div>
+       </div>
+   </div>
+</section>
+
    <!--============ Reputation Section========-->
+
+   <!--====================================
+    <section id="service" class="reputation">
+       <div class="container">
+         <div class="commonHeding">
+             <h1>Arabic Campus</h1>
+         </div>
+           <div class="rpttnBox">
+               <div class="wow fadeInUp rpttnInner">
+                   <div class="img"><img src="/static/theme/images/repotation-img1.png" alt=""></div>
+                    <div class="rpttnText">
+                        <h3>Hostel</h3>
+                        <p>বাংলা ভাষায় রচিত সাহিত্যের আদিতম নিদর্শন হল চর্যাপদ। খ্রিষ্টীয় দশম থেকে দ্বাদশ শতাব্দীর মধ্যবর্তী সময়ে রচিত চর্যা পদাবলি ছিল সহজিয়া বৌদ্ধ</p>
+                    </div>
+               </div>
+               <div class="wow fadeInUp rpttnInner">
+                   <div class="img"><img src="/static/theme/images/repotation-img2.png" alt=""></div>
+                    <div class="rpttnText">
+                        <h3>Play Ground</h3>
+                        <p>আপনি শুধু অন্যের লেখা পড়ছেন, আপনিও জানেন অনেক কিছু, সেগুলো প্রকাশ করারও আপনার ভিষণ ইচ্ছে, কিন্তু বাংলা </p>
+                    </div>
+               </div>
+               <div class="wow fadeInUp rpttnInner">
+                   <div class="img"><img src="/static/theme/images/repotation-img3.png" alt=""></div>
+                    <div class="rpttnText">
+                        <h3>Class room</h3>
+                        <p>কিভাবে লিখি? তার উপর যারা ল্যাপটপ ব্যবহার করেন তাদের তো আবার অন্য সমস্যা, বাংলা কী-বোর্ড-ই নাই। এরকম সমস্যা </p>
+                    </div>
+               </div>
+               <div class="wow fadeInUp rpttnInner">
+                   <div class="img"><img src="/static/theme/images/repotation-img4.png" alt=""></div>
+                    <div class="rpttnText">
+                        <h3>Canteen</h3>
+                        <p>বাংলা লিখতে স্বাচ্ছন্দ্য বোধ করেন। আর ব্লগ সাইটগুলোয় বাংলা লেখার ধুম তো লেগেই আছে।মনের ভাবটি ঠিকমতো প্রকাশ </p>
+                    </div>
+               </div>
+           </div>
+       </div>
+   </section>
+    ====================================-->
+
+
+ <section id="service" class="reputation">
+     <div class="container">
+       <div class="commonHeding">
+           <h1>Arabic Campus</h1>
+       </div>
+         <div class="rpttnBox">
+
+          {% for facility in facilities %}
+            
+             <div class="wow fadeInUp rpttnInner">
+                 <div class="img"><img src="/media/{{facility.image}}" alt=""></div>
+                  <div class="rpttnText">
+                    <a href="facility-detail/{{facility.id}}"><h3>{{ facility.name }}</h3></a>
+                     <p>{{ facility.description |truncatechars:300 }} </p>
+                  </div>
+             </div>
+             {% endfor %}
+         </div>
+     </div>
+ </section>
+
+
+   <!--============ Teacher Diallog Section========-->
+
+   <section class="tchrDillg">
+       <div class="container">
+         <div class="commonHeding">
+             <h1>MTM Authority Massege</h1>
+         </div>
+           <div class="tchrBg1">
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+           </div>
+           <div class="wow fadeInUp headMaster">
+               <div class="techerBody">
+               {% for message in messages %}
+                  <div class="tchrItemBox">
+                      <div class="tchrImg">
+          {% thumbnail message.img "150x150" crop="center" as im %}
+            <img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}">
+          {% endthumbnail %}
+        </div>
+                      <div class="tchrText">
+                        <a href="/massege-detail/{{message.pk}}">
+                        <h2>{{ message.name }}</h2></a>
+                      <h3>{{ message.designation }}</h3>
+                         <p>{{ message.description|truncatechars:250 }}</p>
+                    <a href="url 'authority-detail' authority.pk">Read More...</a>
+                      </div>
+                  </div>
+                {% endfor %}
+              </div>
+           </div>
+       </div>
+   </section>
+
+<!--============================================
+  <section id="review" class="parents">
+       <div class="container">
+           <div class="parntBg">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>   
+           </div>
+          <div class="parentCont">
+             <div class="commonHeding">
+                 <h1>Parents Feedback</h1>
+             </div>
+               <div class="wow fadeInUp parntBox">
+                   <div class="innerBox innerBox1">
+                      {% for feedback in feedbacks %}
+                       <div class="parntInner">
+                          <div class="prntShape prntShape1"></div>
+                            <h3>{{feedback.name}}</h3></a>
+                             <p>{{feedback.description}}</p>
+                       </div>
+                      {% endfor %}
+                   </div>
+               </div>
+               <div class="parentLink">
+                   <a href="/feedback-list">See more <i class="fa fa-angle-right"></i></a>
+               </div>
+          </div>
+       </div>
+   </section>-->
+  <!--======================================= 
+
    <section id="service" class="reputation">
        <div class="container">
          <div class="commonHeding">
@@ -153,8 +336,9 @@
            </div>
        </div>
    </section>
-   
-   <!--============ Teacher Diallog Section========-->
+   ==========================-->
+
+   <!--============ Teacher Diallog Section========
    <section class="tchrDillg">
        <div class="container">
          <div class="commonHeding">
@@ -214,7 +398,7 @@
               </div>
            </div>
        </div>
-   </section>
+   </section>==================-->
    
    <!--============ Parents Section========-->
 
