@@ -1,0 +1,112 @@
+{% extends 'dashboard/dashboard_base.html' %}
+{% block content %}                                    
+<!--============ Main Contant Section ========-->
+<div class="mainContant">               
+<!--============ Main Contant Body Section ========-->
+  <div class="contBody studentInfo">
+    <div class="principlText">
+      <form action="">
+        <h2>Mull Kollan Payment Info</h2>
+        <div class="tbHeadLeft">
+          <select>
+            <option>Select Name</option>
+            <option>Al-Munjir</option>
+            <option>MD Abdullah</option>
+            <option>SD Shoriot</option>
+          </select>
+        </div>
+
+        <div class="tbHeadLeft">
+          <select>
+            <option>Select Month</option>
+            <option>January</option>
+            <option>Feb</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>Jun</option>
+            <option>Julay</option>
+            <option>Agoust</option>
+            <option>Septembor</option>
+            <option>Octomber</option>
+            <option>November</option>
+            <option>December</option>
+            <option>Romjan</option>
+          </select>
+        </div>
+
+        <div class="tbHeadLeft">
+          <select>
+            <option>Select Year</option>
+            <option>2021</option>
+            <option>2020</option>
+            <option>2019</option>
+            <option>2018</option>
+            <option>2017</option>
+            <option>2016</option>
+            <option>2015</option>
+            <option>2014</option>
+          </select>
+        </div><br><br><br>
+
+        <div class="tbHeadLeft">
+          <select>
+            <option>Select Amount</option>
+            <option>20 Tk</option>
+            <option>40 Tk</option>
+          </select>
+        </div>
+        <button type="submit">Pay Now!</button>
+      </form>
+    </div>
+
+<!--===========================Start January to  Jun===========================-->
+    <div class="princplAllMssg studentMssg">
+      <div class="mssgBox">
+        <div class="mssgDtls">
+          <div class="tbBoxHeader">
+            <div class="tbHeadLeft">
+              <select>
+                <option>10</option>
+                <option>20</option>
+                <option>30</option>
+                <option>40</option>
+              </select>
+              <span>Per Page</span>
+            </div>
+            <div class="tbHeadRight">
+              <div class="search"><input type="text" placeholder="Search"></div>
+            </div>
+          </div>    
+        </div>
+        <div class="tbColBox tbHeaderColBox">
+          <span>No</span>
+          <span>Name</span>
+          <span>Month</span>
+          <span>Romjan</span>
+          <span>Totall Payed</span>
+          <span>Totall DUE</span>
+          <span>Option</span>
+        </div>
+        <div class="tbColBox">
+          <span>1</span>
+          <span>Aminul hoq</span>
+          <span>2000</span>
+          <span>2040</span>
+          <span>5,800</span>
+          <span>1,000</span>
+          <span>
+            <select>
+              <option>Option</option>
+              <option>Edit</option>
+              <option>View</option>
+              <option>Delate</option>
+              <option>Submit</option> 
+            </select>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,92 @@
+{% extends 'theme/base.html' %}
+{% block content %}         
+<!--============ Result Section========-->
+<section class="result commonBody">
+    <div class="container">
+        <h3>Search Your result? <br> Please Enter your Information below and <span>Search Now</span></h3>
+        <div class="commonForm addmtnForm">
+          <h2>Result Search</h2>
+           <form action="">
+               <div class="inputGroup">
+                 <span>Account:</span>
+                  <select>
+                    <option value="volvo">-Select Your Account-</option>
+                    <option value="saab">Vision Forty-one</option>
+                    <option value="opel">2nd Account</option>
+                  </select>
+               </div>
+               <div class="inputGroup">
+                 <span>Arabic Bacth</span>
+                  <select>
+                    <option value="volvo">-Select Your Arabic Bacth-</option>
+                    <option value="saab">1st Bacth (2006)</option>
+                    <option value="opel">2nd Bacth (2007)</option>
+                    <option value="audi">3rd Bacth (2008)</option>
+                  </select>
+               </div>
+               <div class="inputGroup">
+                 <span>Year :</span>
+                  <select>
+                    <option value="volvo">-Select Account Year-</option>
+                    <option value="saab">2019</option>
+                    <option value="opel">2018</option>
+                    <option value="audi">2017</option>
+                    <option value="saab">2016</option>
+                    <option value="opel">2015</option>
+                    <option value="audi">2014</option>
+                  </select>
+               </div>
+
+                <div class="inputGroup">
+                  <span>Member ID :</span>
+                   <input type="text" placeholder="Member ID">
+               </div>
+               <button type="submit">Search</button>
+           </form>
+        </div>
+        
+        <div class="rsltSheet">
+            <div class="rsltShtTop">
+                <span><strong>Name :</strong> Taohidul Islam</span>
+                <span><strong>Student ID :</strong> 420</span>
+                <span><strong>Class :</strong> Nine</span>
+                <span><strong>Section :</strong> A</span>
+                <span><strong>Roll No :</strong> 51</span>
+            </div>
+            <div class="rsltShtBody">
+                <span>
+                    <strong>Subject</strong>
+                    <strong>Subject Total</strong>
+                    <strong>Objective</strong>
+                    <strong>Practical</strong>
+                    <strong>Home Work/Class Test</strong>
+                    <strong>Total</strong>
+                    <strong>Highest</strong>
+                    <strong>GPA</strong>
+                    <strong>Grade</strong>
+                </span>
+
+                <span>
+                    <strong>Biology</strong>
+                    <strong>100</strong>
+                    <strong>40</strong>
+                    <strong>33</strong>
+                    <strong>- -</strong>
+                    <strong>10</strong>
+                    <strong>50</strong>
+                    <strong>2.5</strong>
+                    <strong>B</strong>
+                </span>
+            </div>
+            
+            <div class="rsltShtBottom">
+                <span><strong>Total Mark :</strong> 600</span>
+                <span><strong>Avg. Mark :</strong> 50</span>
+                <span><strong>G.P.A :</strong> 2.5</span>
+                <span><strong>Grade :</strong> B</span>
+                <span><strong>Marite Position :</strong>    51</span>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

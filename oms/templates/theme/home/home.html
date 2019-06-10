@@ -1,0 +1,310 @@
+{% extends 'theme/base.html' %}
+{% load thumbnail %}
+{% block content %}
+<main>
+  <!--=============================Start Banner Section=====================-->
+  <section id="home" class="banner">
+    <div class="container">
+      <div class="bannrBg">
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="cercleWrap">
+          <div class="circule">
+            <div class="bnrImg"><img src="/static/theme/images/" alt=""></div>
+            <div class="bnrImg"><img src="/static/theme/images/" alt=""></div>
+            <div class="bnrImg"><img src="/static/theme/images/.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+      <div class="bannerBody">
+        <h1 class="wow fadeInUp">MTM</h1>
+        <h3 class="wow fadeInUp">MTM : মুয়াসসাসাতুত তানমিয়াতুল মালিয়্যাহ</h3>
+        <p class="wow fadeInUp">{{ home.mtm_history }}MTM এর ইতিহাস হবে এখানে</p>
+        <a href="/member" class="wow fadeInUp">MTM Members<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </section>
+  <!--=============================End Banner Section=====================-->
+
+  <!--=========================Start Calender Section=====================-->
+  <section class="calender">
+    <div class="calendereBox">
+      <h2>Calender</h2>
+      <div class="calenderInner">
+        <h2>Calender</h2>
+        <div class="calenderBody">
+          <img src="/static/theme/images/calender.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--=========================End Calender Section=====================-->
+
+  <!--=========================Start About Arabic Section===============-->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="commonHeding">
+        <h1>About Arabic</h1>
+      </div>
+      <div class="abContent">
+        <div class="wow fadeInUp abBoxLft">
+          <img src="/static/theme/images/mosque.jpg" alt="">
+        </div>
+        <div class="wow fadeInUp abBoxrght">
+          <p>{{ home.arabic_history }}এরাবিকের ইতিহাস হবে এখানে</p>  
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--============================End About Arabic Section=================-->
+
+  <!--===================Notice Board
+       <section id="notice" class="notice">
+       <div class="container">
+          <div class="tchrBg1 noticeBg">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+           <div class="noticeBody">
+               <div class="commonHeding">
+                 <h1>MTM Notice Bord</h1>
+             </div>
+               <div class="wow fadeInUp noticeBox">
+                   <div class="wow fadeInUp noticeInner noticeInner1">
+                       <div class="ntcInnrBody">
+                           <p>MTM এর সর্বমোট মূল টাকার পরিমান (154600 + 340000) 4,94,600 
+(চার লক্ষ চৌরা নব্বই হাজার ছয় শত) টাকা মাত্র। </p>
+                       </div>
+                   </div>
+ 
+    ====================End Notice Board=========================-->
+
+  <!---=============Start MTM Notice Board Section===============-->
+  <section id="notice" class="notice">
+    <div class="container">
+      <div class="tchrBg1 noticeBg">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="noticeBody">
+        <div class="commonHeding">
+          <h1>MTM Notice Board</h1>
+        </div>
+        <div class="wow fadeInUp noticeBox">
+          {% for notice in notices %}
+          <div class="wow fadeInUp noticeInner noticeInner1">
+            <div class="ntcInnrBody">
+              <a href="{% url 'notice-details' notice.pk %}">
+                <p>{{ notice.description|truncatechars:250 }}</p>
+              </a>
+             </div>
+          </div>
+          {% endfor %}
+          <div class="moreNotice">
+            <a href="/notice/notice-list">See More...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---=================End MTM Notice Board Section===============-->
+
+  <!--================Start Arabic Facilityes Section==============-->
+  <section id="service" class="reputation">
+    <div class="container">
+      <div class="commonHeding">
+        <h1>Arabic Facilityes</h1>
+      </div>
+      <div class="rpttnBox">
+        {% for facility in facilities %}
+        <div class="wow fadeInUp rpttnInner">
+          <div class="img"><img src="/media/{{facility.image}}" alt=""></div>
+            <div class="rpttnText">
+              <a href="facility-detail/{{facility.id}}"><h3>{{ facility.name }}</h3></a>
+              <p>{{ facility.description |truncatechars:300 }} </p>
+            </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  <!--================End Arabic Facilityes Section==================-->
+
+  <!--===============Start MTM Authority Message Section=============-->
+  <section class="tchrDillg">
+    <div class="container">
+      <div class="commonHeding">
+        <h1>MTM Authority Message</h1>
+      </div>
+      <div class="tchrBg1">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="wow fadeInUp headMaster">
+        <div class="techerBody">
+          {% for message in messages %}
+            <div class="tchrItemBox">
+              <div class="tchrImg">
+                {% thumbnail message.img "150x150" crop="center" as im %}
+                <img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}">
+                {% endthumbnail %}
+              </div>
+              <div class="tchrText">
+                <h2>{{ message.name }}</h2>
+                <h3>{{ message.designation }}</h3>
+                <p>{{ message.description|truncatechars:250 }}</p>
+                <a href="{% url 'message_detail' message.pk %}">Read More...</a>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--===============End MTM Authority Message Section================-->
+
+  <!--================Comments
+  <section id="review" class="parents">
+       <div class="container">
+           <div class="parntBg">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>   
+           </div>
+          <div class="parentCont">
+             <div class="commonHeding">
+                 <h1>Parents Feedback</h1>
+             </div>
+               <div class="wow fadeInUp parntBox">
+                   <div class="innerBox innerBox1">
+                      {% for feedback in feedbacks %}
+                       <div class="parntInner">
+                          <div class="prntShape prntShape1"></div>
+                            <h3>{{feedback.name}}</h3></a>
+                             <p>{{feedback.description}}</p>
+                       </div>
+                      {% endfor %}
+                   </div>
+               </div>
+               <div class="parentLink">
+                   <a href="/feedback-list">See more <i class="fa fa-angle-right"></i></a>
+               </div>
+          </div>
+       </div>
+   </section>-->
+   
+  <!--============Parents Section========-->
+      <section id="review" class="parents">
+        <div class="container">
+           <div class="parntBg">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>  
+           </div>
+          <div class="parentCont">
+             <div class="commonHeding">
+                 <h1>Your Comments</h1>
+             </div>
+               <div class="wow fadeInUp parntBox">
+                   <div class="innerBox innerBox1">
+                       <div class="parntInner">
+                          <div class="prntShape prntShape1"></div>
+                           <h3>Md Aminul Hoque Bhuiyan</h3>
+                           <p>তোরা আর বকিসনা ৷ যাএী এখন রেলে ওঠে গেছে ৷ প্লাটফরমে সে আর থাকবেনা ৷ জীবনে যখন শতকোটীর বাস্তবতা এসে যাবে তখন কিন্তু অন্যের মত অনাহারী আধাহারীদেরকে ভুলিসনা ৷ হা রাতের মুসাফিরগন শেষ বিকালেই প্রস্তুত গ্রহন করে ৷</p>
+                            <div class="readMore"><a href="feedback.html">Read More...</a></div>
+                       </div>
+
+                       <div class="parntInner">
+                           <div class="prntShape prntShape2"></div>
+                           <h3>Jikrullah Jifan</h3>
+                           <p>jak...oboseshe sobar prosner uchit jobab diye nijeke bitorker urdhe rakhlen akhtar vai...sabash...apadoto r keu kicchu bolte parchena.....</p>
+                           <div class="readMore"><a href="feedback.html">Read More...</a></div>
+                       </div>
+                   </div>
+                   
+                   <div class="innerBox innerBox2">
+                       <div class="parntInner">
+                           <div class="prntShape prntShape3"></div>
+                           <h3>Akter Hossain</h3>
+                           <p>এর চেয়ে উপদেশমূলক বড় দোয়া আর হয়না!!!!!
+اللهم تقبل مناجةاستاذي لي ولنا</p>
+                            <div class="readMore"><a href="feedback.html">Read More...</a></div>
+                       </div>
+
+                       <div class="parntInner">
+                           <div class="prntShape prntShape4"></div>
+                           <h3>আবীর আর সুভাষ</h3>
+                           <p>"অর্ধহার আর অনাহারের এই ছাত্রত্ব প্রায় ডুবু ডুবু!সম্ভাবনার ভবিষ্যৎ আমাকে শত কোটি স্বপ্ন দেখায়,সম্ভাবনা অবশ্যম্ভবী"
+ওয়াই! কি চমৎকার অনুভূতি!</p>
+                            <div class="readMore"><a href="feedback.html">Read More...</a></div>
+                       </div>
+                   </div>
+               </div>
+               <div class="parentLink">
+                   <a href="/feedback">Comment<i class="fa fa-angle-right"></i></a>
+               </div>
+          </div>
+       </div>
+   </section>
+
+  <!--==========================Contact Us Section======================-->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contBg">
+        <span></span>
+        <span></span>  
+        <span></span>
+      </div>
+      <div class="contWrwp">
+        <div class="wow fadeInUp contItem contItem1">
+          <h4>Quick Links</h4>
+          <nav class="ftrNav">
+            <ul>
+              <li><a href="/"><i class="fa fa-angle-right" aria-hidden="true"></i>Home</a></li>
+              <li><a href="/history"><i class="fa fa-angle-right" aria-hidden="true"></i>About Arabic</a></li>
+              <li><a href="/mtmhistory"><i class="fa fa-angle-right" aria-hidden="true"></i>About MTM</a></li>
+              <li><a href="#!"><i class="fa fa-angle-right" aria-hidden="true"></i>Blog</a></li>
+            </ul>
+            <ul>
+              <li><a href="/authority"><i class="fa fa-angle-right" aria-hidden="true"></i>MTM Authority</a></li>
+              <li><a href="/member"><i class="fa fa-angle-right" aria-hidden="true"></i>MTM Members</a></li>
+              <li><a href="notice/notice-list"><i class="fa fa-angle-right" aria-hidden="true"></i> MTM Notices </a></li>
+              <li><a href="/gallery"><i class="fa fa-angle-right" aria-hidden="true">
+              </i>Gallery</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="wow fadeInUp contItem contItem2">
+          <h4>Contact Us</h4>
+          <strong><span><i class="fa fa-phone" aria-hidden="true"></i></span>MTM President Number : 01726-488559</strong>
+          <strong><span><i class="fa fa-phone" aria-hidden="true"></i></span>MTM Cashier Number : 01758-267795</strong>
+          <strong><span><i class="fa fa-phone" aria-hidden="true"></i></span>MTM Number : 01779-055243</strong>
+          <strong><span><i class="fa fa-envelope" aria-hidden="true"></i></span> arabic@mtm.com</strong>
+          <p><span><i class="fa fa-map-marker" aria-hidden="true"></i>  </span>Gazipur, Dhaka, Bangladesh</p>
+        </div>         
+        <div class="wow fadeInUp contItem contItem3">
+          <h4>Follow Us</h4>
+          <div class="socialIcon">
+            <a href="https://www.facebook.com/groups/Arabicmodel/"><i class="fa fa-facebook" aria-hidden="true"></i>এরাবিক মডেল একাডেমী</a> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>      
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends 'dashboard/dashboard_base.html' %}
+{% block content %}                                    
+<!--============ Main Contant Section ========-->
+<div class="mainContant">
+<!--============ Main Contant Body Section ========-->
+  <div class="contBody">
+    <div class="principlText">
+      <form action="">
+        <h2>MTM Members</h2>
+        <div class="input"><input type="text" placeholder="MTM Member Name :"></div>
+        <div class="input"><input type="text" placeholder="MTM Member Contact Number :"></div>
+        <textarea name="" id="" placeholder="MTM Member Description :"></textarea>
+        <div class="file"><input type="file" required=""></div>
+        <button type="submit">Save Massege</button>
+      </form>
+    </div>
+    <div class="princplAllMssg">
+      <div class="mssgBox">
+        <div class="mssgDtls">
+          <div class="tbBoxHeader">
+            <div class="tbHeadLeft">
+              <select>
+                <option>10</option>
+                <option>20</option>
+                <option>30</option>
+                <option>40</option>
+              </select>
+              <span>Per Page</span>
+            </div>
+            <div class="tbHeadRight">
+              <div class="search"><input type="text" placeholder="Search"></div>
+            </div>
+          </div>
+          <div class="tbColBox tbHeaderColBox">
+            <span>No</span>
+            <span>Name</span>
+            <span>Mobile Number</span>
+            <span>Option</span>
+          </div>
+          <div class="tbColBox">
+            <span>1</span>
+            <span>Abdullah</span>
+            <span>01758-267795</span>
+            <span>
+              <select>
+                <option>Option</option>
+                <option>Edit</option>
+                <option>View</option>
+                <option>Delate</option>
+                <option>Submit</option>
+              </select>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}                    

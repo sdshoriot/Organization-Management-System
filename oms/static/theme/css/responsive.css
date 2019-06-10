@@ -1,0 +1,637 @@
+@media screen and (max-width:19020px){
+    
+    /*---------------------- HOME ---------------------*/
+    /*---------------------- PAGE ---------------------*/
+    /*---------------------- START ---------------------*/
+    
+    
+    /*----------------- Banner Section -----------*/
+    .bannrBg span:nth-child(2) {left: 37%;}
+   .bannrBg span:nth-child(3) {
+        left: 87%;
+        width: 13.8%;
+    }
+    .bannrBg span:nth-child(3)::after {
+        bottom: 64%;
+        transform: skewY(29deg);
+    }
+    
+}
+@media screen and (max-width:1770px){
+    .bannrBg span:nth-child(3) {
+        left: 88.5%;
+        width: 11.8%;
+    }
+}
+@media screen and (max-width:1679px){}
+@media screen and (max-width:1440px){
+    .bannrBg span:nth-child(2) {
+        left: 38%;
+    }
+    .bannrBg span:nth-child(3) {
+        left: 90.5%;
+    }
+    .bannrBg span:nth-child(3)::after {
+        bottom: 72%;
+        transform: skewY(35deg);
+    }
+    
+    
+    
+}
+@media screen and (max-width:1365px){
+    nav ul li a, nav ul li a:visited {padding: 0 18px;}
+    .contItem1 {
+        box-sizing: border-box;
+        padding-left: 30px;
+    }
+    .parntBox {
+        width: 75%;
+    }
+    
+    
+}
+@media screen and (max-width:1279px){
+    
+    nav ul li a, nav ul li a:visited {
+        padding: 0 7px;
+    }
+    .navigation {flex-basis: 55%;}
+    .mainMenu li a {padding: 12px 8%;
+        font-size: 16px;
+    }
+    .bannerBody h1 {
+        font-size: 60px;
+        margin: 5% 0 2% 0;
+    }
+    .bannerBody h3 {
+        font-size: 24px;
+        line-height: 27px;
+        padding: 6px 0;
+    }
+    .bannerBody p {
+        width: 62%;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 2% 0;
+    }
+    .bannerBody a {font-size: 18px;}
+    .bannerBody a i {font-size: 30px;}
+    .abBoxLft {
+        flex-basis: 30%;
+    }
+    .bannrBg span:nth-child(2) {
+        left: 38.5%;
+    }
+    .abBoxrght {
+        flex-basis: 70%;
+    }
+    .headMaster .img {
+        flex-basis: 30%;
+    }
+    .masterText {
+        flex-basis: 70%;
+    }
+    .parntBox {
+        width: 95%;
+    }
+    .bannrBg span:nth-child(3) {
+        left: 89.8%;
+    }
+    
+    /*--------------------- NOTICE -------------------*/
+    /*---------------------- PAGE ---------------------*/
+    /*---------------------- START ---------------------*/
+    .fllNtcBox ul li span {
+        flex-basis: 20%;
+        display: unset;
+    }
+
+    
+}
+@media screen and (max-width:1023px){
+    body{
+        font-size: 14px;
+    }
+    nav ul li a, nav ul li a:visited {
+        padding: 0 6px;
+        font-size: 16px;
+    }
+    .mainMenu li a {
+        padding: 12px 6%;
+    }
+    .borderHeader {margin-bottom: 40px;}
+    .bnrImg {width: 9%;}
+    .bnrImg:nth-child(2) {
+        left: 42%;
+        width: 13%;
+    }
+    .bnrImg:nth-child(3) {
+        left: 66%;
+        width: 10%;
+    }
+    .bannrBg span:nth-child(2) {
+        left: 40%;
+    }
+    .bannrBg span:nth-child(3) {
+        left: 91%;
+    }
+    .bannrBg span:nth-child(3)::after {
+        bottom: 65%;
+        transform: skewY(38deg);
+    }
+    .abBoxLft {
+        flex-basis: 100%;
+        padding: 0 35%;
+    }
+    .abBoxrght {
+        flex-basis: 100%;
+        padding: 40px 25px;
+        text-align: center;
+    }
+    .noticeBox {width: 100%;}
+    .rpttnInner {
+        padding: 30px 30px;
+    }
+    .rpttnInner .img {
+        flex-basis: 20%;
+    }
+    .rpttnText {
+        flex-basis: 80%;
+    }
+    .rpttnText {
+        padding: 0 20px;
+    }
+    .headMaster .img {
+        flex-basis: 100%;
+        padding: 0 40%;
+    }
+    .masterText {
+        flex-basis: 100%;
+        text-align: center;
+        padding: 30px 0;
+    }
+    .rpttnBox {padding-bottom: 65px;}
+    .innerBox1 .parntInner:nth-child(1)::after, .innerBox1 .parntInner:nth-child(2)::after {
+        right: -38%;
+    }
+    .innerBox2 .parntInner:nth-child(1)::after, .innerBox2 .parntInner:nth-child(2)::after {
+        left: -38.5%;
+    }
+    .contItem1 {
+        flex-basis: 40%;
+        padding-left: 15px;
+    }
+    .contItem2 {
+        box-sizing: border-box;
+        padding-left: 30px;
+    }
+    .contItem3 {
+        flex-basis: 30%;
+    }
+    
+    
+    /*---------------------- SINE IN ---------------------*/
+    /*---------------------- PAGE ---------------------*/
+    /*---------------------- START ---------------------*/
+    .sinInBox {
+        width: 50%;
+    }
+    
+    
+    /*--------------------- REVIEW -------------------*/
+    /*---------------------- PAGE ---------------------*/
+    /*---------------------- START ---------------------*/
+    
+    .review h3 {padding: 12% 0 6% 0;
+        font-size: 16px;
+        width: 80%;
+    }
+    .rvwForm {
+        width: 80%;
+    }
+    
+    
+    /*--------------------- NOTICE -------------------*/
+    /*---------------------- PAGE ---------------------*/
+    /*---------------------- START ---------------------*/
+   .noticePage h1 {
+        padding-top: 60px;
+    }
+    .fllNtcBox ul li:hover {
+        transform: scale(1.01, 1.15);
+    }
+    .fllNtcBox ul li span {
+        flex-basis: 22%;
+    }
+    .fllNtcBox ul li p {
+        flex-basis: 78%;
+    }
+    
+    
+    
+}
+@media screen and (max-width:899px){
+    nav ul li a, nav ul li a:visited {
+        padding: 0 4px;
+        font-size: 14px;
+    }
+    .calendereBox {left: -51px;}
+    .calendereBox h2 {line-height: 27px;}
+    .logo {
+        flex-basis: 100%;
+    }
+    .logo a {
+        flex-basis: 7%;
+    }
+    .logo h2 {
+        flex-basis: 93%;
+        font-size: 20px;
+    }
+    .navigation {
+        flex-basis: 100%;
+    }
+    .mainMenu li a {
+        padding: 12px 20%;
+    }
+    .bannerBody {
+        padding: 10% 0 33% 67px;
+    }
+    .bannerBody h1 {
+        font-size: 47px;
+        margin: 12% 0 0% 0;
+    }
+    .bannerBody h3 {
+        font-size: 19px;
+        padding: 2px 0;
+    }
+    .bannerBody p {
+        width: 65%;
+        font-size: 14px;
+        margin: 2% 0;
+    }
+    .bannerBody a {
+        font-size: 14px;
+        padding: 6px 12px;
+        border-radius: 4px;
+    }
+    .bannerBody a i {
+        display: none;
+    }
+    .bannrBg span:nth-child(2) {
+        left: 41%;
+    }
+    .bannrBg span:nth-child(3) {
+        left: 92%;
+    }
+    .borderHeader {
+        font-size: 25px;
+        padding-bottom: 12px;
+    }
+    .borderHeader::after,
+    .borderHeader::before{
+        border-top: 2px solid #333;
+    }
+    .innerBox1 {padding: 0 11.7% 0 0;}
+    .innerBox2 {padding: 0 0 0 11.7%;}
+    
+}
+@media screen and (max-width:767px){
+    p{line-height: 22px}
+    body {
+         font-size:14px;
+    }
+    .logo h2 {
+        font-size: 18px;
+    }
+    .navigation {display: unset;}
+    a.menuBtn {float: right;}
+    .bannrBg span:nth-child(1) {
+        width: 41%;
+        height: 20px;
+    }
+    .bannrBg span:nth-child(2) {
+        left: 42%;
+        width: 65%;
+        bottom: -19px;
+        height: 20px;
+        
+    }
+    .bnrImg:nth-child(1) {
+        top: 35px;
+        left: 21%;
+    }
+    .tchrBg1 {bottom: 8%;}
+    .rpttnInner .img {
+        flex-basis: 100%;
+        padding: 0 35%;
+    }
+    .rpttnText {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .innerBox1 .parntInner:nth-child(1)::after, .innerBox1 .parntInner:nth-child(2)::after {top: 43%;}
+    .innerBox2 .parntInner:nth-child(1)::after, .innerBox2 .parntInner:nth-child(2)::after {top: 45%;}
+    .contItem1 {
+        flex-basis: 100%;
+        padding-left: 50px;
+    }
+    .contItem2 {
+        padding-left: 50px;
+        flex-basis: 50%;
+        padding-top: 30px;
+    }
+    .contItem3 {
+        flex-basis: 50%;
+        padding: 30px 0 0 26px;
+        box-sizing: border-box;
+    }
+    .about {
+        margin-bottom: 100px;
+    }
+    .noticeInner1,
+    .noticeInner4 {
+        flex-basis: 50%;
+    }
+    .noticeInner2,
+    .noticeInner3 {
+    flex-basis: 50%;
+}
+    .tchrBg1 span:nth-child(4) {
+        width: 69%;
+        height: 20px;
+        right: -7%;
+        top: -1px;
+    }
+    .tchrBg1 span:nth-child(5) {
+        width: 38.2%;
+        height: 20px;
+        right: -7%;
+        top: 19px;
+    }
+    .tchrBg1 span:nth-child(1) {
+        width: 75%;
+        height: 20px;
+        right: -7%;
+        bottom: -20px;
+    }
+    .tchrBg1 span:nth-child(2) {
+        right: -7%;
+        width: 43%;
+        height: 20px;
+        bottom: -40px;
+    }
+    .contBg span:nth-child(2) {height: 20px;}
+    .contBg span:nth-child(3) {height: 20px;top: 18px;}
+    .contBg span:nth-child(1) {
+        border-top: 57px solid #EAEAEA;
+        border-left: 111px solid transparent;
+    }
+    
+    
+    /*---------------------- SINE IN ---------------------*/
+    /*---------------------- PAGE ---------------------*/
+    /*---------------------- START ---------------------*/
+    .sineIn h3 {width: 100%;}
+    
+     /*--------------------- REVIEW -------------------*/
+    /*---------------------- PAGE ---------------------*/
+    /*---------------------- START ---------------------*/
+    .review h3 {font-size: 14px;}
+    .sinInBox form .input input {
+        font-size: 14px;
+        line-height: 35px;
+    }
+    .rvwForm form button {
+        padding: 2px 40px;
+    }
+    
+    
+}
+@media screen and (max-width:639px){
+    .bannerBody h1 {
+        font-size: 40px;
+        margin: 10% 0 0% 0;
+        line-height: 55px;
+    }
+    .bannerBody h3 {
+        font-size: 16px;
+        padding: 0px 0;
+    }
+    .bannerBody p {
+        width: 95%;
+        font-size: 14px;
+        margin: 2% 0;
+        line-height: 17px;
+    }
+    .bnrImg:nth-child(2) {
+        top: -25px;
+    }
+    .abBoxrght {padding: 25px;}
+    .tchrBg1 {
+        bottom: 5%;
+    }
+    .noticeInner1,
+    .noticeInner4 {
+        flex-basis: 100%;
+    }
+    .noticeInner2,
+    .noticeInner3 {
+    flex-basis: 100%;
+}
+    .rpttnInner {
+        flex-basis: 100%;
+    }
+    .parntBox {
+        width: 100%;
+    }
+    .innerBox {
+        flex-basis: 100%;
+        padding: 0;
+    }
+    .parntBox::after {
+        display: none;
+    }
+    .prntShape{
+        display: none;
+    }
+    .parntInner {
+        margin: 75px 0;
+        box-sizing: border-box;
+        position: relative;
+        box-shadow: 0px 14px 46px 1px #000;
+        text-align: center;
+    }
+    .innerBox2 {
+        margin-top: 0;
+    }
+    .parntInner {
+        margin: 40px 0;
+    }
+    .sineIn h3 {
+        padding: 12% 0 4% 0;
+    }
+    
+    
+     /*---------------------- SINE IN ---------------------*/
+    /*---------------------- PAGE ---------------------*/
+    /*---------------------- START ---------------------*/
+    .sinInBox {
+        width: 80%;
+    }
+    
+    
+    /*---------------------- CONTACT US ---------------------*/
+    /*---------------------- PAGE ---------------------*/
+    /*---------------------- START ---------------------*/
+    .cntcBox {
+        flex-basis: 100%;
+        box-sizing: border-box;
+        padding: 0 0 48px 39%;
+    }
+    
+    
+    /*--------------------- REVIEW -------------------*/
+    /*---------------------- PAGE ---------------------*/
+    /*---------------------- START ---------------------*/
+    .rvwForm form .input {
+        flex-basis: 100%;
+    }
+    .rvwForm form .input:nth-child(1),
+    .rvwForm form .input:nth-child(2) {
+        padding: 0 0 15px 0;
+    }
+    .rvwForm form button {
+        padding: 0 25px;
+        margin-top: 15px;
+    }
+    .rvwForm form {padding: 15px;border-radius: 10px;}
+    .rvwBoxInner:nth-child(1) {
+        text-align: center;
+    }
+    .rvwBox {
+        margin: 0;
+    }
+    .rvwBoxInner {
+        flex-basis: 100%;
+        padding: 0;
+    }
+    .lstRvw {
+        padding: 70px 0 30px 0;
+        text-align: center;
+    }
+    .rvwInner {
+        text-align: center;
+    }
+    
+    /*--------------------- NOTICE -------------------*/
+    /*---------------------- PAGE ---------------------*/
+    /*---------------------- START ---------------------*/
+    .fllNtcBox ul li span {
+        flex-basis: 100%;
+        font-size: 16px;
+        padding-bottom: 6px;
+    }
+    .fllNtcBox ul li p {
+        flex-basis: 100%;
+        padding: 0;
+    }
+    
+}
+
+
+@media screen and (max-width:439px){
+    .bannerBody {
+        padding: 10% 0 33% 33px;
+    }
+    .bannerBody h1 {
+        margin: 25% 0 2% 0;
+        font-size: 26px;
+        line-height: 38px;
+    }
+    .bannrBg span:nth-child(1) {
+        left: -11%;
+    }
+    .bannrBg span:nth-child(3) {
+        left: 96%;
+    }
+    .bannrBg span:nth-child(3)::after {
+        bottom: 34%;
+        transform: skewY(57deg);
+    }
+    .bnrImg:nth-child(3) {
+        top: -12px;
+    }
+    .contItem2 {flex-basis: 100%;}
+    .contItem3 {
+        flex-basis: 100%;
+        padding: 30px 0 0 53px;
+    }
+    
+     /*---------------------- SINE IN ---------------------*/
+    /*---------------------- PAGE ---------------------*/
+    /*---------------------- START ---------------------*/
+    .sineIn h3 {
+        padding: 20% 0 4% 0;
+    }
+    .sinInBox {
+        width: 95%;
+    }
+    .sinInBox form .input input {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .sinInBox form label {
+        font-size: 15px;
+        line-height: 31px;
+    }
+    .sinInBox form .input {
+        padding-bottom: 15px;
+    }
+    .sinInBox form {padding: 15px;
+        border-radius: 10px;
+    }
+    .sinInBox form button {
+        border-radius: 10px;
+        line-height: 30px;
+        padding: 0 12px;
+    }
+    
+     /*---------------------- CONTACT US ---------------------*/
+    /*---------------------- PAGE ---------------------*/
+    /*---------------------- START ---------------------*/
+    .contact h3 {
+        padding: 20% 0 6% 0;
+    }
+    .cntcBox {
+        padding: 0 0 48px 27%;
+    }
+    
+    /*--------------------- REVIEW -------------------*/
+    /*---------------------- PAGE ---------------------*/
+    /*---------------------- START ---------------------*/
+    .review h3 {
+        padding-top: 60px;
+    }
+    
+    
+    /*--------------------- NOTICE -------------------*/
+    /*---------------------- PAGE ---------------------*/
+    /*---------------------- START ---------------------*/
+    .fllNtcBox ul li:hover {
+        transform: scale(1.16, 1.1);
+    }
+    
+    
+}
+
+
+
+
+
+
+
+ /*---------------- Responsive Navigation -------------*/
+    /*---------------------- PAGE ---------------------*/
+    /*---------------------- START ---------------------*/
+

@@ -1,0 +1,25 @@
+{% extends 'theme/base.html' %}
+{% load thumbnail %}
+{% block content %}
+<section class="massagedetails commonBody">
+  <div class="container">
+    <div class="commonHeding">
+      <h1>{{ shaykh.name }} - Details</h1>
+    </div>
+    <div class="techerBody">
+      <div class="tchrItemBox">
+        <div class="tchrImg">
+          {% thumbnail shaykh.img "150x150" crop="center" as im %}
+            <img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}">
+          {% endthumbnail %}
+        </div>
+        <div class="tchrText">
+          <h2>{{ shaykh.name }}</h2>
+          <h3>{{ shaykh.designation }}</h3>
+          <p>{{ shaykh.biography | safe }}</p> 
+        </div>
+      </div> 
+    </div>
+  </div>
+</section>
+{% endblock %}

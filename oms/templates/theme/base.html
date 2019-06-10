@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>MTM</title>
+
+<link href="/static/theme/css/font-awesome.min.css" rel="stylesheet">
+<link href="/static/theme/css/animate.css" rel="stylesheet">
+<link href="/static/theme/css/style.css" rel="stylesheet">
+<link href="/static/theme/css/responsive.css" rel="stylesheet">
+
+</head>
+<body>
+<!--============ Header Section========-->
+<section id="header" class="header">
+  <div class="container">
+    <div class="headerBox">
+      <div class="logo">
+        <a href="#"><img src="/static/theme/images/logo2.png" alt=""></a>
+        <h2>ARABIC MODEL ACADEMY</h2>
+        <div class="sine">
+          <h3>Arabic : 2006</h3>
+          <h3>MTM : 2014</h3>
+        </div>
+      </div>
+       
+      <nav>
+        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+          <ul class="nav-list">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="#!">About Arabic</a>
+              <ul class="nav-dropdown">
+                <li>
+                  <a href="/shaykh">Al-Forqan Shaykh</a>
+                </li>
+                <li>
+                  <a href="/teacher">Arabic Teachers</a>
+                </li>
+                <li>
+                  <a href="/student">Arabic Students</a>
+                </li>
+                <li>
+                  <a href="/stuff">Arabic Stuff</a>
+                </li>
+                <li>
+                  <a href="/history">Arabic History</a>
+                </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#!">About MTM</a>
+                <ul class="nav-dropdown">
+                <li>
+                  <a href="/authority">MTM Authority</a>
+                </li>
+                <li>
+                  <a href="/member">MTM Members</a>
+                </li>
+                <li>
+                  <a href="/vission">Vision 41</a>
+                </li>
+                <li>
+                  <a href="/second">2nd Account</a>
+                </li>
+                <li>
+                  <a href="/award">MTM Award</a>
+                </li>
+                <li>
+                  <a href="/rules">MTM Rules</a>
+                </li>
+                <li>
+                  <a href="/mtmhistory">MTM History</a>
+                </li>
+              </ul>
+            </li>
+          <li><a href="/accounts">Accounts</a></li>
+          <li><a href="/notice/notice-list">Notices</a></li>
+          <li><a href="/gallery">Gallery</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="/login">Log In</a></li>
+          <li><a href="/sineup">Sine Up</a></li>
+          <li><a href="/dashboard">Dashboard</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</section>
+
+  {% block content %}
+  {% endblock %} 
+  
+<!--=========Added footer code===========--
+<footer class="app-footer">
+    <span>© 2019—{% now 'Y' %} J Deluxe Channel Limited</span>
+    <span class="ml-auto"><b>Developed by <a href="https://www.facebook.com/shoriot">SD Shoriot</b></a></span>
+    {% block extrafooter %}
+    {% endblock %}
+</footer>
+====================================-->  
+
+    <footer>
+
+      <div align="left"><p>© 2014—{% now 'Y' %} <b>MTM.</b></p></div>
+      <div align="right"><p>Developed by <a href="https://www.facebook.com/shoriot">SD Shoriot</a></p></div>
+
+    </footer>
+      
+    <script src="/static/theme/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/static/theme/js/wow.min.js" type="text/javascript"></script>
+    <script src="/static/theme/js/script.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

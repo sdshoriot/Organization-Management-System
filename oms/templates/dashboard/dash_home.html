@@ -1,0 +1,124 @@
+{% extends 'dashboard/dashboard_base.html' %}
+{% block content %}
+<!--============ Main Contant Section ========-->
+<div class="mainContant">
+<!--============ Main Contant Body Section ========-->
+  <div class="contBody homeBody">
+    <section class="header">
+      <div class="headerBody">
+        <h2>Arabic Header</h2>
+        <form action="">
+          <div class="headerLogo"><label for="">Choice Logo :</label><div class="inptFile"> Select File <i class="fa fa-file-o" aria-hidden="true"></i><input type="file" required=""></div></div>
+          <div class="accdmcTitle"><input type="text" placeholder="Arabic Model Academy " required=""></div>
+            <div class="accdmSine">
+              <div class="input"><input type="text" placeholder="Arabic : 2006" required=""></div>
+              <div class="input"><input type="text" placeholder="MTM : 2014" required=""></div>
+            </div>
+            <div class="headerNav"></div>
+          <div class="headerButton"><button type="submit">Save</button></div>
+        </form>
+      </div>
+    </section>
+    <section class="header">
+      <div class="headerBody bannerBody">
+        <h2>MTM Banner</h2>
+        <form action="">
+          <div class="input"><input type="text" placeholder="MTM Header : MTM" required=""></div>
+          <div class="input"><input type="text" placeholder="MTM Title : মুয়াচ্ছাছাতুত্ তানমিয়াতুল মালিয়া" required=""></div>
+          <div class="input"><textarea name="" placeholder="MTM History Description :"></textarea></div>
+          <div class="button"><button type="submit">Save</button></div>
+        </form>
+      </div>
+    </section>
+    <section class="header">
+      <div class="headerBody bannerBody">
+        <h2>Arabic History</h2>
+        <form action="">
+          <div class="input"><input type="text" placeholder="Arabic History Title :" required=""></div>
+          <div class="input"><textarea name="" placeholder="Arabic History Description :"></textarea></div>
+          <div class="file"><input type="file"required=""></div>
+          <div class="button"><button type="submit">Save</button></div>
+        </form>
+      </div>
+    </section>
+    
+    <div class="contBody AthorBody">
+      <div class="principlText">
+        <form action="">
+          <h2>MTM Authority Message</h2>
+          <div class="input"><input type="text" placeholder="Authority Name :" required=""></div>
+          <div class="input"><input type="text" placeholder="Authority Designation :" required=""></div>
+          <textarea name="" id="" placeholder="Authority Massage :" required=""></textarea>
+          <div class="file"><input type="file" required=""></div>
+          <button type="submit">Save Message</button>
+        </form>
+      </div>
+      <div class="princplAllMssg">
+        <div class="mssgBox">
+          <div class="mssgDtls">
+            <div class="tbBoxHeader">
+              <div class="tbHeadLeft">
+                <select>
+                  <option>10</option>
+                  <option>20</option>
+                  <option>30</option>
+                  <option>40</option>
+                </select>
+                <span>Per Page</span>
+              </div>
+              <div class="tbHeadRight">
+                <div class="search"><input type="text" placeholder="Search"></div>
+              </div>
+            </div>
+            <div class="tbColBox tbHeaderColBox">
+              <span>No</span>
+              <span>Authority Name</span>
+              <span>Authority Designation</span>
+              <span>Option</span>
+            </div>
+            <div class="tbColBox">
+              <span>1</span>
+              <span>Aminul Hoq</span>
+              <span>Pristoposhok</span>
+              <span>
+                <select>
+                  <option>Option</option>
+                  <option>Edit Massege</option>
+                  <option>View Massege</option>
+                  <option>Delate Massege</option>
+                  <option>Submit Massege</option>
+                </select>
+              </span>
+            </div>
+          </div>
+      </div>
+    </div>
+    
+    <section class="footerCont">
+      <div class="ftContBody">
+        <form action="">
+          <div class="quickLinkBox">
+            <div class="checkInput"><input type="checkbox"><label for="">Quick Link</label></div>
+          </div>
+          <div class="contBox">
+            <div class="checkInput"><input type="checkbox"><label for="">Contact Us</label></div>
+            <div class="input"><input type="text" placeholder="MTM Number : 01779-055243"></div>
+            <div class="input"><input type="text" placeholder="Contact Email : arabic@mtm.com"></div>
+            <div class="input"><input type="text" placeholder="Address : Gazipur, Dhaka, Bangladesh"></div>
+          </div>
+          <div class="folliwtBox">
+            <div class="fllwLeft">
+              <div class="checkInput"><input type="checkbox"><label for="">Follow Us</label></div>
+              <div class="input"><input type="text" placeholder="url: https://www.facebook.com/groups/Arabicmodel/"></div>
+            </div>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+            </ul>
+          </div>
+          <div class="button"><button type="submit">Save</button></div>
+        </form>    
+      </div>
+    </section>
+  </div>
+</div>
+{% endblock %}

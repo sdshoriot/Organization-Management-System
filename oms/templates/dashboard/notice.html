@@ -1,0 +1,53 @@
+{% extends 'dashboard/dashboard_base.html' %}
+{% block content %}
+<!--============ Main Contant Section ========-->
+<div class="mainContant">
+<!--============ Main Contant Body Section ========-->
+  <div class="contBody">
+    <div class="principlText">
+      <form action="">
+        <h2>Add Notice</h2>
+        <textarea name="" id="" placeholder="Type MTM Notice Here:"></textarea>
+        <button type="submit">Publish Notice</button>
+      </form>
+    </div>   
+  <!--============ Main Contant Body Section ========-->
+    <div class="princplAllMssg feedback">
+      <div class="mssgBox">
+        <div class="mssgDtls">
+          <div class="tbBoxHeader">
+            <div class="tbHeadLeft">
+              <select>
+                <option>10</option>
+                <option>20</option>
+                <option>30</option>
+                <option>40</option>
+              </select>
+              <span>Per Page</span>
+            </div>
+            <div class="tbHeadRight">
+              <div class="search"><input type="text" placeholder="Search"></div>
+            </div>
+          </div>
+          <div class="tbColBox tbHeaderColBox">
+            <div>MTM Notices</div>
+          </div>
+          <div class="tbColBox">
+            <span>1</span>
+            <p>Description</p>
+            <span>
+              <select>
+                <option>Option</option>
+                <option>Edit</option>
+                <option>View</option>
+                <option>Delate</option>
+                <option>Submit</option>  
+              </select>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
